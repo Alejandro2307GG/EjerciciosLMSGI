@@ -1,0 +1,2 @@
+<!ELEMENT videoclub (empty | películas)*>
+<!ELEMENT película (película)+>
