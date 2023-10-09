@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE superheroes SYSTEM "01-dtd-videoclub.dtd-"> 
-
+<!DOCTYPE videoclub SYSTEM "01-dtd-videoclub.dtd"> 
+<videoclub direccion="Calle_Andalucía_nº5" nombre="Cinesa">
+    <películas codigo="AE"> 
+        <nombre> Avengers Endgame</nombre>
+        <tipo> Acción </tipo>
+        <precio> 5€</precio>
+        <Disponible/>
+    </películas>
+    <películas codigo="JL">  
+         <nombre> Justice League </nombre>
+        <tipo> Acción </tipo>
+        <precio> 5€</precio>
+        <Agotado/>
+    </películas>
+    <oferta> coste="8" 2x1
+        <peliculareferida> Codigo="JL" combinacion="8"</peliculareferida>
+    </oferta>
+</videoclub>

@@ -1,2 +1,24 @@
-<!ELEMENT videoclub (empty | películas)*>
-<!ELEMENT película (película)+>
+<!ELEMENT videoclub (oferta | películas)*>
+<!ELEMENT películas (nombre, tipo, precio, (Disponible | Agotado))*>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT Disponible EMPTY>
+<!ELEMENT Agotado EMPTY>
+<!ELEMENT oferta (#PCDATA | peliculareferida)*>
+<!ELEMENT peliculareferida ANY>
+
+
+
+
+<!ATTLIST videoclub direccion  CDATA #IMPLIED
+                    nombre  CDATA #REQUIRED
+                    telefono CDATA #FIXED "954738492">
+<!ATTLIST películas codigo CDATA #REQUIRED
+                    mc CDATA #IMPLIED>
+<!ATTLIST  peliculareferida Codigo IDREF #IMPLIED
+                             combinacion IDREFS #IMPLIED>
+<!ENTITY % atributoCoste "coste CDATA #IMPLIED"> 
+<!ATTLIST precio %atributoCoste;>
+<!ATTLIST oferta %atributoCoste;>
+<!ENTITY estrellas "Mejor puntuación">
