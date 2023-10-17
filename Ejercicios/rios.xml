@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rios SYSTEM "rios.dtd">
+<rios codigoprov="S E T"> 
+    <rio nombre="Guadalquivir" extension="53km" lugar="España">
+    <provincia codigo="S" >
+        <ciudadprincipal>
+           Sevilla
+        </ciudadprincipal>
+        <afluentes>
+            Genil 
+        </afluentes>
+        <principal/>
+    </provincia>
+    </rio>
+    <rio nombre="Tajo" extension="54km">
+    <provincia codigo="T" >
+        <ciudadprincipal>
+            Madrid
+        </ciudadprincipal>
+        <afluentes>
+            Manzanares &conagua;
+        </afluentes>
+        <principal/>
+    </provincia>
+    </rio>
+    <rio nombre="Ebro" extension="54km">
+        <provincia codigo="E" >
+            <ciudadprincipal>
+                Madrid
+            </ciudadprincipal>
+            <afluentes>
+                Manzanares 
+            </afluentes>
+            <principal/>
+        </provincia>
+        </rio>
+        <largo nombre="1" />
+        <corto nombre="4" /> 
+</rios>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula SYSTEM "Batman.dtd"> 
+<pelicula> 
+    <batman> esta es mi pelicula favorita 
+        <personaje nombre="batman" traje="negro" padres="no" codigo="b" codigoderefe="s"> 
+            <ciudad>Gotham de &Wayne;</ciudad>
+            <ayudante>Alfred</ayudante>
+            <heroe/>
+        </personaje>
+        <personaje nombre="superman" traje="azul y rojo" codigo="s"> 
+
+
+            <ciudad>metropolis</ciudad>
+            <heroe/>
+        </personaje>
+    </batman>
+    <batalla nombre="batalla atomica" />
+    <pelea nombre="contra superman" />
+
+
+</pelicula>

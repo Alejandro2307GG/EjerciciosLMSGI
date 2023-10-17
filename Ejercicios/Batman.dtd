@@ -1,0 +1,19 @@
+<!ELEMENT pelicula (batman, batalla, pelea)>
+<!ELEMENT batman (#PCDATA | personaje)*>
+<!ELEMENT personaje (ciudad, ayudante?, (heroe | villano))>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT ayudante (#PCDATA)>
+<!ELEMENT heroe EMPTY>
+<!ELEMENT villano EMPTY>
+<!ELEMENT batalla EMPTY>
+<!ELEMENT pelea EMPTY>
+<!ATTLIST personaje nombre (batman | joker | superman) "batman" 
+                    traje CDATA #REQUIRED
+                    padres CDATA #IMPLIED
+                    casado CDATA #FIXED "si"
+                    codigo ID #REQUIRED
+                    codigoderefe IDREF #IMPLIED>
+<!ENTITY Wayne " Bruce Wayne">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST batalla %atributoNombre;>
+<!ATTLIST pelea %atributoNombre;>                   

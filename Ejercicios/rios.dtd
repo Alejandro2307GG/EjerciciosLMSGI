@@ -1,0 +1,21 @@
+<!ELEMENT rios (#PCDATA | largo | corto |rio)*>
+<!ELEMENT rio (provincia)+>
+<!ELEMENT provincia (ciudadprincipal, afluentes?, (principal | afluente))+> 
+<!ELEMENT afluentes (#PCDATA)>
+<!ELEMENT principal EMPTY>
+<!ELEMENT afluente EMPTY>
+<!ELEMENT ciudadprincipal (#PCDATA)> 
+<!ELEMENT nacimiento EMPTY>
+<!ELEMENT largo EMPTY>
+<!ELEMENT corto EMPTY>
+<!ATTLIST rio nombre (Guadalquivir | Tajo | Ebro) "Guadalquivir"
+          extension CDATA #REQUIRED
+          Desembocadura CDATA #IMPLIED
+          lugar CDATA #FIXED "España"> 
+<!ATTLIST provincia codigo ID #REQUIRED>
+<!ATTLIST provincia codigor IDREF #IMPLIED>
+<!ATTLIST rios codigoprov IDREFS #IMPLIED>
+<!ENTITY conagua "tiene mucho caudal">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST largo %atributoNombre;>
+<!ATTLIST corto %atributoNombre;>
