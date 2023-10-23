@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE local SYSTEM "menuRestaurante.dtd">
+<local nombre="La mafia italiana" direccion="C/Santa Lucía nº6" numeroTelefono="957629087" losmejoresplatos="P M S">
+  <platos> Son los mejores platos de esta ciudad 
+  <plato nombre="pizza" codigo="P" codigobuenamezcla="M">
+    <nombre> pizza 4 quesos &extra;</nombre>
+    <precio>12€</precio>
+   <grande/>
+</plato>
+  <plato nombre="macarrones" codigo="M" codigobuenamezcla="P">
+   <nombre>pasta</nombre>
+    <precio>9€</precio>
+   <pequeño />
+  </plato>
+  <plato nombre="espaguetis" codigo="S">
+    <nombre>pasta &extra;</nombre>
+    <precio>20€</precio>
+    <grande />
+  </plato>
+  </platos>
+  <horario n="si se puede recoger en el restaurante"/>
+  <recoger n="si se puede recoger en el restaurante"></recoger>
+</local>

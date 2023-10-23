@@ -1,0 +1,22 @@
+<!ELEMENT local (platos, horario, recoger)>
+<!ELEMENT platos (#PCDATA | plato)*>
+<!ELEMENT plato (nombre+, precio?, (grande | pequeño))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT grande EMPTY>
+<!ELEMENT pequeño EMPTY>
+<!ELEMENT horario EMPTY>
+<!ELEMENT recoger EMPTY>
+<!ATTLIST local nombre CDATA #REQUIRED
+                direccion CDATA #IMPLIED
+                numeroTelefono CDATA #FIXED "957629087"
+                losmejoresplatos IDREFS #IMPLIED>
+<!ATTLIST plato nombre (pizza| macarrones| espaguetis) "pizza"
+                codigo ID #REQUIRED
+                codigobuenamezcla IDREF #IMPLIED>
+<!ENTITY extra "Tiene extra de queso">
+<!ENTITY % atributoNombre "n CDATA #REQUIRED">
+<!ATTLIST horario %atributoNombre;>
+<!ATTLIST recoger %atributoNombre;>
+              
+                
