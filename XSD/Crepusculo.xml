@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Crepusculo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Crepusculo.xsd">
+Crepusculo 
+<personaje nombre="Ana" relacionCon="Alejandro" />
+	<personaje nombre="Alejandro" relacionCon="Ana" />
+	<personaje nombre="Raul" enemigo="Alejandro " />
+	<personaje nombre="Fran" rol="Hombre lobo" />
+    <misterio>
+		<nombre>crepusculo I</nombre>
+		<escenario nombre="Madrid" />
+		<pais> España</pais>
+	</misterio>
+	<accion>
+		<nombre>crepusculo II</nombre>
+		<escenario nombre="Granada" />
+		<pais> España </pais>
+	</accion>
+
+
+</Crepusculo>
