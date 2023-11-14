@@ -1,0 +1,11 @@
+<Raiz AtributoLista="Rojo" AtributoIntervalo="500">
+    <ElementoVacio/>
+    <ElementoMixto>
+        <Texto>Texto de ejemplo</Texto>
+        <Subelemento>Subelemento de ejemplo</Subelemento>
+    </ElementoMixto>
+    <ElementoAtributosContenido AtributoCadena="Cadena" AtributoNumerico="123">
+        <Contenido>Contenido de ejemplo</Contenido>
+    </ElementoAtributosContenido>
+    <ElementoAtributosNumericos AtributoLista="Verde" AtributoIntervalo="800">42</ElementoAtributosNumericos>
+</Raiz>

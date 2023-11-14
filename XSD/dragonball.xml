@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dragonball xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="dragonball.xsd">
+falagalera
+ <personajes>
+ <guerrerosz>  </guerrerosz> 
+<villano>    </villano>
+
+
+ </personajes>
+ 
+ <lugares>
+
+
+
+ </lugares>
+ 
+
+
+
+</dragonball>

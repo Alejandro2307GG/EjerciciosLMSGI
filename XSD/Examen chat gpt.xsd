@@ -1,0 +1,77 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de tipos de datos simples -->
+    <xs:simpleType name="Color">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rojo"/>
+            <xs:enumeration value="Verde"/>
+            <xs:enumeration value="Azul"/>
+            <!-- Añadir más colores según sea necesario -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CodigoUsuario">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z]{1}[A-Za-z]{3}[A-Za-z]{3}[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Matricula">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="DireccionMAC">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definición de tipos de datos complejos -->
+    <xs:complexType name="Persona">
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"/>
+            <xs:element name="Apellido1" type="xs:string"/>
+            <xs:element name="Apellido2" type="xs:string"/>
+            <xs:element name="DNI" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ElementoComplejo">
+        <xs:sequence>
+            <xs:element name="Texto" type="xs:string"/>
+            <xs:element name="Subelemento" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ElementoAtributos">
+        <xs:sequence>
+            <xs:element name="Contenido" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="AtributoCadena" type="xs:string"/>
+        <xs:attribute name="AtributoNumerico" type="xs:integer"/>
+    </xs:complexType>
+
+    <!-- Definición del elemento principal -->
+    <xs:element name="Raiz">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="ElementoVacio"/>
+                <xs:element name="ElementoMixto" type="ElementoComplejo"/>
+                <xs:element name="ElementoAtributosContenido" type="ElementoAtributos"/>
+                <xs:element name="ElementoAtributosNumericos" type="xs:integer"/>
+            </xs:choice>
+            <xs:attribute name="AtributoLista" type="Color"/>
+            <xs:attribute name="AtributoIntervalo" type="xs:integer" minOccurs="1" maxOccurs="2">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="100"/>
+                        <xs:maxInclusive value="1000"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
