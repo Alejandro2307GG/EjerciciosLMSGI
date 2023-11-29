@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ejemplo 2</title>
+	<style type="text/css">
+		body {
+			margin: 50px;
+			padding: 0px;
+			background: #000000;
+			font-family: 'arial', sans-serif;
+			font-size: 12pt;
+			color: rgb(255, 255, 255);
+		}
+
+
+
+
+		img:hover {
+			transform: scale(5);
+			transition: 1s;
+		}
+
+		table th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+			border-radius: 5px;
+		}
+
+		table td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+			border-radius: 5px;
+		}
+
+
+		.cbatman {
+			border: 1px solid #777777;
+			background: rgb(0, 0, 0);
+			color: white;
+		}
+
+		.csuperman {
+			border: 1px solid #777777;
+			background: rgb(4, 88, 224);
+		}
+
+		.cwonderwoman {
+			border: 1px solid #777777;
+			background: rgb(224, 4, 4);
+		}
+
+		.cflash {
+			border: 1px solid #777777;
+			background-color: rgb(213, 224, 4);
+		}
+
+		table {
+
+			cursor: pointer;
+			width: 60%;
+			margin: 50px;
+			border-radius: 5px;
+		}
+
+		img {
+			border: 2px solid #585858;
+			height: 50px;
+			margin: 50px;
+
+		}
+
+		tr:hover {
+			background-color: rgb(252, 252, 252);
+			color: rgb(0, 0, 0);
+
+		}
+
+
+
+		tr:active {
+			background: rgb(0, 0, 0);
+			color: white;
+
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<table width="80%">
+		<caption>Superhéroes de DC</caption>
+		<tr>
+			<th>Superhéroes</th>
+			<th>Poderes</th>
+			<th>Imagen</th>
+			<th>Bibliografía</th>
+		</tr>
+		<tr class="cbatman">
+			<td rowspan="2">Batman</td>
+			<td>Inteligencia, habilidades de detective, habilidades marciales</td>
+			<td rowspan="2"> <a href="https://www.dc.com/characters/batman" target="_blank"><img
+						src="https://media4.giphy.com/media/l0NwGpoOVLTAyUJSo/giphy.gif"
+						alt="Batman el caballero oscuro"> </a>
+			<td rowspan="2"><button><a href="https://es.wikipedia.org/wiki/Batman">Mas sobre Batman </button></td>
+
+		</tr>
+		<tr class="cbatman">
+			<td>Alias: El caballero Oscuro</td>
+		</tr>
+		<tr class="csuperman">
+			<td>Superman</td>
+			<td>Vuelo, superfuerza, vision de rayos X</td>
+			<td> <a href="https://www.dc.com/characters/superman" target="_blank"><img
+						src="https://i.gifer.com/K63F.gif" alt="Superman, el hombre de acero"> </a>
+
+			</td>
+			<td><button> <a href="https://es.wikipedia.org/wiki/Superman">Mas sobre Superman </button></td>
+
+		</tr>
+
+		<tr class="cwonderwoman">
+			<td>Wonder Woman</td>
+			<td>Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
+			<td> <a href="https://www.dc.com/characters/wonder-woman" target="_blank"><img
+						src="https://i.pinimg.com/originals/1d/2e/df/1d2edf4e8ea20b84279870923838203b.gif"
+						alt="Wonder Woman"> </a> </td>
+			<td><button><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla">Mas sobre WonderWoman</button></td>
+
+		</tr>
+		<tr class="cflash">
+			<td rowspan="2">Flash</td>
+			<td>Inteligencia, habilidades de detective, habilidades marciales</td>
+			<td rowspan="2"> <a href="https://www.dc.com/characters/the-flash" target="_blank"><img
+						src="https://i.pinimg.com/originals/b4/dd/78/b4dd78266b7af0d57fb036d92d5cad2c.gif" alt="Flash">
+				</a> </td>
+			<td rowspan="2"> <button><a href="https://es.wikipedia.org/wiki/Flash_(historieta)">Mas sobre Flash
+				</button></td>
+
+		</tr>
+		<tr class="cflash">
+			<td>Alias: Flash el veloz</td>
+		</tr>
+</body>
+
+</html>
