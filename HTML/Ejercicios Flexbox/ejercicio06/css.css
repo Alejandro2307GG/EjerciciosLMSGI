@@ -1,0 +1,19 @@
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: baseline;
+    height: 742px;
+   background-color: rgb(250, 250, 250);
+    flex: 1;
+}
+.flex-container>div {
+
+    width: 50px;
+
+    text-align: center;
+
+}
