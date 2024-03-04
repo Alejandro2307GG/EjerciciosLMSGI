@@ -1,0 +1,35 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #dde0e2;
+}
+
+.clase3 {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #656565;
+}
+
+.ultimo {
+  background-color: #007bff;
+}
+
+.btn-block {
+  background-color: #007bff;
+  width: 100%;
+}
+
+.billing-address {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.your-cart {
+  color: rgb(112, 112, 112);
+  font-size: 30px;
+}
+
+.payment {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */
